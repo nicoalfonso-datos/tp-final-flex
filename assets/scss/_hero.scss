@@ -1,0 +1,57 @@
+// ========================
+// HERO
+// ========================
+.hero {
+  background-color: $color-bg;
+  padding: 80px 40px 60px;
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-teal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: aparecer 0.8s ease forwards;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $color-texto;
+  }
+}
+
+// Animación subtítulo — slide desde la izquierda
+.subtitulo-hero {
+  opacity: 0;
+  animation: deslizarIzquierda 0.8s ease 0.8s forwards;
+}
+
+@keyframes deslizarIzquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

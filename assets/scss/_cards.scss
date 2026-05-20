@@ -1,0 +1,40 @@
+/*CARDS - GRIDS DE SERVICIOS*/
+.cards-container {
+  max-width: 1008px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  .card {
+    background-color: $color-card-bg;
+    border: 1px solid $color-gris-borde;
+    padding: 28px 24px;
+
+    &:last-child {
+      grid-column: 1;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: $color-teal;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $color-gris-linea;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: $color-texto-suave;
+    }
+  }
+}

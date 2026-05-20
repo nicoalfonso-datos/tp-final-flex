@@ -1,0 +1,41 @@
+/*EXTEND BASE COMPARTIDA PARA TITULOS*/
+%titulo-base {
+  font-size: 1.9rem;
+  font-weight: 450;
+  color: $color-teal;
+  margin-bottom: 24px;
+}
+
+.titulo-seccion {
+  @extend %titulo-base;
+}
+
+.titulo-seccion-centrado {
+  @extend %titulo-base;
+  text-align: center;
+}
+
+/*MODIFICADORES DE SECCION*/
+.seccion {
+  padding: 64px 40px;
+
+  &-blanca {
+    background-color: $color-blanco;
+  }
+
+  &-gris {
+    background-color: $color-bg;
+  }
+}
+
+/*TEXTO INTRODUCTORIO DE SERVICIOS*/
+.intro-texto {
+  max-width: 820px;
+  margin: 0 auto 48px;
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: $color-texto-suave;
+  }
+}

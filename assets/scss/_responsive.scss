@@ -1,0 +1,94 @@
+// ========================
+// RESPONSIVE
+// ========================
+
+@include tablet {
+  header {
+    padding: 14px 20px;
+
+    nav ul {
+      justify-content: center;
+    }
+  }
+
+  .hero {
+    padding: 56px 20px 40px;
+
+    h2 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  .seccion {
+    padding: 48px 20px;
+  }
+
+  .nosotros-grid {
+    flex-direction: column;
+
+    .nosotros-texto {
+      padding: 40px 20px;
+    }
+
+    .nosotros-imagen {
+      height: 300px;
+
+      img {
+        height: 300px;
+      }
+    }
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    .card:last-child {
+      grid-column: 1;
+    }
+  }
+
+  .cotizacion-wrapper {
+    padding: 0 10px;
+  }
+}
+
+@include mobile {
+  header {
+    nav ul li a {
+      font-size: 0.72rem;
+      padding: 3px 6px;
+    }
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .titulo-seccion,
+  .titulo-seccion-centrado {
+    font-size: 1.5rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+
+    .card:last-child {
+      grid-column: 1;
+    }
+  }
+
+  .form-fila {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nosotros-grid .nosotros-imagen {
+    height: 220px;
+
+    img {
+      height: 220px;
+    }
+  }
+}

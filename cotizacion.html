@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicitá un presupuesto sin cargo para destapaciones cloacales o pluviales. Completá el formulario y nos comunicamos a la brevedad.">
+  <title>Cotización - Destapaciones Olazábal</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-izq">
+      <img src="assets/img/Logo2.png" alt="Logo Destapaciones Olazábal">
+    </div>
+    <div class="header-der">
+      <a href="tel:1158978797" class="btn-llamar">Llamar</a>
+      <span class="header-telefono"><img src="assets/img/ring-phone.png" alt="Teléfono">1158978797</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Nuestros Servicios</a></li>
+        <li><a href="cotizacion.html" class="activo">Cotización</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="seccion seccion-blanca">
+      <div class="cotizacion-wrapper">
+
+        <h2 class="titulo-seccion-centrado">Reciba una cotización</h2>
+
+        <p class="cotizacion-intro">Le invitamos a completar el siguiente formulario, con el mayor detalle posible; para así poder confeccionar un presupuesto estimado adecuado para el trabajo solicitado. Es importante colocar la zona; y, en el caso de tratarse de destapaciones cloacales/pluviales, colocar los metros aproximados desde el acceso más cercano a la línea municipal, hasta el cordón de la vereda. Si se tratase de una cotización para limpieza de columna, por favor indicar la cantidad de pisos y sectores del edificio.</p>
+
+        <p class="cotizacion-nota">Recuerde que su consulta no nos molesta, estamos para ayudarle.</p>
+
+        <form>
+          <div class="form-grupo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+          </div>
+
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-grupo">
+              <label for="telefono">Teléfono *</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="consulta">Consulta *</label>
+            <textarea id="consulta" name="consulta" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2008 - 2026 Destapaciones Olazábal. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
