@@ -10,6 +10,45 @@ header {
   flex-wrap: wrap;
   gap: 12px;
   border-bottom: 1px solid $color-gris-borde;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+// Hamburguesa (CSS-only, checkbox hack)
+.menu-toggle {
+  display: none;
+}
+
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+
+  span {
+    display: block;
+    height: 2px;
+    background-color: $color-texto;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+.menu-toggle:checked ~ .hamburguesa span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .hamburguesa span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menu-toggle:checked ~ .hamburguesa span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 .header-izq {
